@@ -14,3 +14,4 @@ The general idea when we're working with a Mock server we need to consider three
 - [Example mountebank](https://medium.com/digio-australia/mock-it-with-mountebank-88762dadac1f#:~:text=using%20.js%20file-,What%20is%20Mountebank%3F,proxy%20to%20the%20real%20service.)
 - [Test Double](https://martinfowler.com/bliki/TestDouble.html)
 - [The Rick and Morty API](https://rickandmortyapi.com/) for mock and stub in mock server
+- [httpbin](https://httpbin.org/)
