@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "b640fdf5-9deb-48ba-b2f1-3e5f13614f74",
+		"name": "Mock Server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "132250"
+	},
+	"item": [
+		{
+			"name": "Get Rick and Morty Character Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{RICK_AND_MORTY_SERVER}}/api/character",
+					"protocol": "https",
+					"host": [
+						"{{RICK_AND_MORTY_SERVER}}"
+					],
+					"path": [
+						"api",
+						"character"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post data to httpbin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "City",
+							"value": "Sydney\n",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://{{HTTPBIN_URL}}/anything",
+					"protocol": "https",
+					"host": [
+						"{{HTTPBIN_URL}}"
+					],
+					"path": [
+						"anything"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
