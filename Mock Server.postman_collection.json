@@ -36,7 +36,8 @@
 						{
 							"key": "City",
 							"value": "Sydney\n",
-							"type": "text"
+							"type": "text",
+							"disabled": true
 						}
 					]
 				},
@@ -48,6 +49,27 @@
 					],
 					"path": [
 						"anything"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get XML response",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "XML",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://{{LOCAL_XML}}",
+					"protocol": "https",
+					"host": [
+						"{{LOCAL_XML}}"
 					]
 				}
 			},
