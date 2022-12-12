@@ -17,6 +17,10 @@
             "inject": "<%- stringify(filename, '../settings/server_response.ejs') %>"
           }
         ]
+      },
+      {
+        "predicates": [{ "contains": { "headers": { "Content-Type": "xml" } } }],
+        "responses": [{ "is": { "body": "<%- stringify(filename, '../settings/xml_response.ejs') %>" }}]
       }
     ]
 }
