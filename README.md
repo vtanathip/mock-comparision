@@ -8,6 +8,11 @@ The general idea when we're working with a Mock server we need to consider three
 - Mock : are pre-programmed with expectations which form a specification of the calls they are expected to receive (Behavior)
 - Stub : provide canned answers to calls made during the test, usually not responding at all to anything outside what's programmed in for the test. (State)
 
+## Mountebank
+### Benefits
+- Injection JavaScript for modification 
+- Support mock over the wire 
+
 ## How to use
 ### Mountebank
 - ```npm i -g mountebank```
