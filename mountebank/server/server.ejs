@@ -1,0 +1,22 @@
+{
+    "port": 5055,
+    "protocol": "https",
+    "name": "origin",
+    "stubs": [
+      {
+        "predicates": [
+          {
+            "equals": {
+              "method": "GET",
+              "path": "/api/character"
+            }
+          }
+        ],
+        "responses": [
+          {
+            "inject": "<%- stringify(filename, '../settings/server_response.ejs') %>"
+          }
+        ]
+      }
+    ]
+}
